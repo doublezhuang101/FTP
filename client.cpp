@@ -10,7 +10,7 @@ client::client(QWidget *parent)
 	ui.setupUi(this);
 	this->setWindowTitle("客户端");
 	connect(ui.openButton, &QPushButton::clicked, this, &client::openFile);
-	connect(ui.sendButton,&QPushButton::clicked,this,&client::send)
+	connect(ui.sendButton, &QPushButton::clicked, this, &client::send);
 	ui.label->setText("当前无文件");
 	ui.openButton->setText("打开文件");
 	ui.sendButton->setText("发送文件");
